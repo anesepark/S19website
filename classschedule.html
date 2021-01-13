@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="classschedule.css">
+        <link rel="stylesheet" href="headerfooter.css">
+        <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+
+    </head>
+    <body id="bodycontainer">
+        <!-- Navigation bar -->
+        <header class = "mainheader">
+            <nav class= "mainnav">
+                <ul class= "mainnav-items">
+                    <!-- start of hamburger menu -->
+                    <nav id="sidenav">
+                        <div id="sidenav-item">
+                            <input type="checkbox"/>
+                            
+                            <div class="hamburglar">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                                
+                            <ul id="sidenav-menu">
+                                <a href="index.html"><li>Home</li></a>
+                                <a href="gallery.html"><li>Gallery</li></a>
+                                <a href="portfolio.html"><li>Portfolio</li></a>
+                                <a href="resume.html"><li>Resume</li></a>
+                                <a href="classschedule.html"><li>Class</li></a>
+                                <a href="contactme.html"><li>Contact Me</li></a>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <!-- navigation menu items--> 
+                    <div class = "mainnav-list">
+                        <li class= "mainnav-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class = "mainnav-item">
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li class = "mainnav-item">
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class = "mainnav-item">
+                            <a href="resume.html">Resume</a>
+                        </li>
+                        <li class = "mainnav-item">
+                            <a href="classschedule.html">Class Schedule</a>
+                        </li>
+                        <li class = "mainnav-item">
+                            <a href="contactme.html">Contact Me</a>
+                        </li>
+                    </div> 
+                </ul>
+            </nav> 
+        </header> <!-- end of website header -->
+
+        <!-- start of website content -->
+        
+        <div class="content-container">
+            <div class="schedule">
+                <h1 id="schedule-header">Fall 2019 Classes</h1>
+
+                <div class = "day">
+                    <h3 class="dayheading">M/W/F SCHEDULE</h3>
+                    <button class="biology classes collapsible">BIOL130</button>
+                        <div class="content">
+                            <h4>Instructor: Professor Terry Hill</h4>
+                            <h4>Time: 10 AM - 10:50 AM</h4>
+                            <p class="bigdesc">This course examines fundamental aspects of life at the level of cells and molecules. Major themes addressed in the course include the nature of biologically important molecules and how that relates to the structural organization of cells, the cellular mechanisms of heredity and reproduction; 3) mechanisms by which cell functions are regulated, and the central pathways of metabolic energy conversions. Throughout the course, strong emphasis will be placed upon the relationship between complexity of function and complexity of structure, as well as upon the importance of energy in any process having complex outcomes.</p>
+                            <p class="smalldesc">This course examines fundamental aspects of life at the level of cells and molecules. Throughout the course, strong emphasis will be placed upon the relationship between complexity of function and complexity of structure, as well as upon the importance of energy in any process having complex outcomes.</p>
+                        </div>
+
+                    <button class="operatingsystems classes collapsible">COMP231</button>
+                        <div class="content">
+                            <h4>Instructor: Brian Larkins</h4>
+                            <h4>Time: 11 AM - 11:50 AM</h4>
+                            <p class="bigdesc">A bottom-up exploration of the interaction between computer hardware and software. Topics begin with an introduction to digital logic, and continue through elementary processor design, to assembly language, machine data representation, and computer arithmetic. Other topics in contemporary computer architecture such as multicore processors and GPGPU’s may be discussed as time allows. Projects include hardware and simulated digital circuits as well as programs in assembly language.</p>
+                            <p class="smalldesc">A bottom-up exploration of the interaction between computer hardware and software. Projects include hardware and simulated digital circuits as well as programs in assembly language.</p>
+                        </div>
+
+                    <button class="discretemath classes collapsible">COMP172</button>
+                        <div class="content">
+                            <h4>Instructor: Professor Christopher Mouron</h4>
+                            <h4>Time: 12 PM - 12:50 PM</h4>
+                            <p>An introduction to and survey of the mathematics used in computer science including functions, relations, sets, counting, logic, Boolean algebra, proof techniques, induction, recursion, computational complexity, and computability. Other topics may be included as time permits.</p>
+                        </div>
+
+                    <button class="research classes collapsible">RESEARCH</button>
+                        <div class="content">
+                            <h4>Instructor: Professor Patrick Kelly</h4>
+                            <h4>Time: flexible</h4>
+                            <p>Dr. Patrick Kelly's research is motivated by how landscape and watershed characteristics influence ecosystem processes and functioning. Research will consist of collecting different water samples and testing them for different chemicals and elements.</p>
+                        </div>
+
+                </div>
+                <div class="day">
+                    <h3 class="dayheading">T/TH SCHEDULE</h3>
+                    <button class="piano classes collapsible">PIANO</button>
+                        <div class="content">
+                            <h4>Instructor: Professor Brian Ray</h4>
+                            <h4>Time: 10 AM - 10:50 AM</h4>
+                            <p>Students are instructed on piano pieces, dynamics, posture, and more. Curriculum is based on the student's skill level.</p>
+                        </div>
+                    <button class="urbanstudies classes collapsible">URST201</button>
+                        <div class="content">
+                            <h4>Instructor: Professor Shaolu Yu</h4>
+                            <h4>Time: 11 AM - 12:15 PM</h4>
+                            <p>An interdisciplinary approach to examining issues and institutions in American cities; neighborhoods, downtowns, suburbs, housing, poverty, environmental justice, nonprofits and city politics; discussion of urban public and social policies; field trips or service learning will be used to do hands on analysis of urban issues.</p>
+                        </div>
+
+                    <button class="biologylab classes collapsible">BIOL130 LAB</button>
+                        <div class="content">
+                            <h4>Instructor: Professor Bayley Wheeler</h4>
+                            <h4>Time: 12:30 PM - 3:29 PM</h4>
+                            <p>An introduction to investigative techniques in biology and skills required for the analysis and presentation of scientific findings, with emphasis on topics at the cellular level.</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div id="photo">
+                    <a href="https://rhodes.edu"><img src="https://www.rhodes.edu/sites/default/files/Rhodes%20Logo%202004%20CMYK_0.png" alt=""></a> 
+                </div>
+    
+                <div class="sideintro">
+                    <p>Rhodes College is a private liberal arts college in Memphis, Tennessee. Historically affiliated with the Presbyterian Church, it is a member of the Associated Colleges of the South and is accredited by the Southern Association of Colleges and Schools.</p>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- start of website footer -->
+        <footer class="mainfooter">
+            <ul class= "mainfooter-items">
+                <div class="leftside">
+                    <p class= "mainfooter-item">Last updated: July 24th, 2019</p>
+                    <p class= "mainfooter-item">©2019</p>
+                    <p id="footer-link"><a href="https://www.linkedin.com/in/chaeyoun-park-02a5b7188/">LinkedIn</a></p> 
+            </ul>
+            
+        </footer>
+        <a id="footlink" href="https://www.linkedin.com/in/chaeyoun-park-02a5b7188/">LinkedIn</a>
+    </body>
+    <script src="classschedule.js"></script>
+</html>

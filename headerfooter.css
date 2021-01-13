@@ -1,0 +1,307 @@
+body, html {
+    padding-top: 1.20rem;
+    padding-bottom: 1.7rem;
+    margin: 0;
+    height: 100%;
+
+    font-family: "Catamaran", sans-serif;
+    background: url("http://66.media.tumblr.com/41ef2e469cfb47a878640d40fbf6d741/tumblr_movdbcThVO1ru3nbdo9_250.png");
+}
+
+.mainheader{
+    top: 0;
+    width: 100%;
+    height: 2.5rem;
+    position: fixed;
+    z-index: 100;
+    background-color: #FFD9D9;
+    text-decoration: none;
+    font-size: 0.9rem;
+
+}
+
+.mainnav-items{
+    text-align: right;
+}
+
+.mainnav-item{
+    display: inline-block;
+    list-style: none;
+}
+
+.mainnav-item a{
+    display: none;
+}
+
+/**** hamburger icon ****/
+#sidenav-item span
+{
+  display: block;
+  width: 33px;
+  height: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background-color: #FFF;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+}
+
+#sidenav-item input:checked ~ ul
+{
+  transform: none;
+  
+}
+
+.hamburglar{ /** position of the hamburger **/
+    position: relative;
+    top: -57px;
+    left: -77px;
+}
+
+.mainnav a{
+  text-decoration: none;
+  color: #A2B1C4;
+  font-family: "Catamaran", sans-serif;
+  padding-right: 20px;
+  font-size: 1rem;
+  
+  transition: color 0.3s ease;
+}
+
+
+#sidenav-item{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#sidenav-item input{ /** position of the button **/
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -63px;
+  left: -85px;
+  
+  cursor: pointer;
+  
+  opacity: 0;
+  z-index: 100;
+  
+  -webkit-touch-callout: none;
+}
+
+#sidenav-menu{
+  position: absolute;
+  width: 150px;
+  margin: -100px 0 0 -90px;
+  padding-top: 30px;
+
+  
+  background: #FFD9D9;
+  list-style-type: none;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  /** slows down the movement at the end for a smoother transition **/
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#sidenav-menu li{
+  font-size: 0.9rem;
+  font-family: "Catamaran", sans-serif;
+  padding-right: 20px;
+
+}
+
+/******************************** FOOTER ********************************/
+.mainfooter {
+    position: fixed;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+
+    height: 2rem;
+    background-color: #FFD9D9;
+}
+
+.mainfooter-item{
+    text-decoration: none;
+    display: inline-block;
+
+    font-family: "Palanquin", sans-serif;
+    color: #A2B1C4;
+    font-size: 0.5rem;
+
+    position: relative;
+    bottom: 17px;
+    right: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************** start of tablet styles **********************************/
+@media only screen and (min-device-width : 767px) and (max-device-width : 1024px){
+    body, html {
+        padding-top: 1.22rem;
+        
+    }
+
+    
+    /****************** FOOTER *******************/
+    .mainfooter{
+        height: 2rem;
+    }
+    .mainfooter-item,
+    #footer-link a{
+        position: relative;
+        bottom: 15px;
+        right: 20px;
+    }
+
+    #footer-link a{
+        left: 480px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************** start of desktop styles **********************************/
+@media only screen and (min-width: 1024px) {
+    /******************** main navigation ********************/
+    
+    body, html {
+        padding-top: 1.55rem;
+    }
+
+    .mainnav-items{
+        background-color: #FFD9D9;
+    }
+    
+    .mainnav-item{
+        list-style: none;
+        display: inline-block;
+    }
+
+    .mainnav-item a{
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px;
+        margin: 4px;
+        
+        font-family: "Palanquin", sans-serif;
+        font-size: 1em;
+        color: #A2B1C4;
+        font-weight: bold;
+        border-radius: 2px;
+
+        position: relative;
+        bottom: 4px;
+
+
+
+    }
+
+    .hamburglar,
+    #sidenav{
+        display: none;
+    }
+
+    .mainheader{
+        height: 20px;
+    }
+
+    .mainnav a:hover{
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out; 
+
+        color: rgb(126, 141, 172);
+        background-color: rgb(255, 238, 238);
+    }
+
+    /******************** footer ********************/
+
+    .mainfooter {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;  
+
+        background-color: #FFD9D9;
+        margin: 0;
+        padding: 0;
+    }
+    .mainfooter ul{
+        margin: 0px;
+    }
+    .mainfooter-item{
+        text-decoration: none;
+        display: inline-block;
+    
+        padding: 5px;
+        font-family: "Palanquin", sans-serif;
+        color: #A2B1C4;
+        font-weight: bold;
+
+        position: relative;
+        top: 2px;
+    }
+    
+    #footer-link{
+        float: right;
+
+        padding-right: 20px;
+        display: inline-block;
+        bottom: 11rem;
+    }
+    
+    #footer-link a{
+        text-decoration: none;
+        font-family: "Palanquin", sans-serif;
+        font-size: 0.5rem;
+        bottom: 0.5rem;
+        color: rgb(146, 161, 180);
+        font-weight: bold;
+
+
+        position: relative;
+        
+    }
+}

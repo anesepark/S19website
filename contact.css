@@ -1,0 +1,189 @@
+body{
+    overflow: hidden;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid rgb(221, 182, 182);
+    border-radius: 3px;
+    box-sizing: border-box;
+
+    margin-top: 6px;
+    margin-bottom: 16px;
+
+}
+  
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: rgb(255, 167, 164);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button{text-align: center;}
+  
+  
+  
+  /* Add a background color and some padding around the form */
+  .contact-container {
+    background-color: rgba(255, 219, 219, 0.432);
+    padding: 20px;
+
+    font-family: "Catamaran", sans-serif;
+    color: rgb(168, 131, 131);
+    
+    margin: auto;
+
+  }
+
+    .contact-container h1{
+        text-align: center;
+        border: 5px solid white;
+        
+    }
+
+  .othercontact-container img{margin: 0.7rem;}
+
+    .othercontact-container{
+    text-align: center;
+    margin-top: 0.5rem;
+    }
+
+    .contact-container{border-radius: 5px;}
+    .othercontact-container .icons{display: inline-block;}
+    .button{text-align: left;}
+
+   
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************** start of tablet styles **********************************/
+@media only screen and (min-device-width : 767px) and (max-device-width : 1024px){
+    body{
+        overflow: hidden;
+    }
+    .contact-container{
+        border-radius: 5px;
+
+    }
+
+    .othercontact-container .icons{
+        display: inline-block;
+    }
+    .button{
+        text-align: left;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************** start of desktop styles **********************************/
+@media only screen and (min-width: 1024px) {
+    /******************** main navigation ********************/
+    #bodycontainer{
+        display: flex;
+        padding-top: 1.7rem;
+        overflow: hidden;
+    }
+    body, html {
+        padding-top: 0;
+    }
+
+    /******************** content ********************/
+    .contact-container{
+        position: relative;
+        top: 2rem;
+        width: 60%;
+
+        margin: auto;
+        margin-top: 2rem;
+
+
+    }
+
+    .button{
+        text-align: left;
+    }
+
+    input[type=submit]:hover {
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out; 
+        background-color: #b7b8ff;
+    }
+
+   .othercontact-container img{
+        margin-top: 6rem;
+        
+    }
+
+    .othercontact-container{
+        position: fixed;
+        right: 5rem;
+    }
+    
+    .othercontact-container .icons{
+        display: block;
+        
+
+    }
+}
+
+
+
+
+
+/************* LARGE LAPTOP ****************/
+@media only screen and (min-width: 1440px){
+    .othercontact-container{
+        display: block;
+        position: fixed;
+        right: 10rem;
+    }
+
+    .contact-container{
+        top: 0.3rem;
+    }
+}

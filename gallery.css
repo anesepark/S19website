@@ -1,0 +1,236 @@
+
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        padding-top: 5.20rem;
+    }
+
+    .content-header{
+        background-color: #ffd4d494;
+        margin: 0.6rem;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    .contentintro{
+        text-align: center;
+        font-size: 0.8rem;
+        border-radius: 4px;
+        
+        margin: 1rem;
+        padding: 0.3rem;
+        
+        color: #a57777;
+        background-color: #ffffff83;
+    }
+    
+    #lifeheader{
+        color: #b88686fd;
+        padding: 1rem;
+        border: 4px solid white;
+        border-radius: 3px;
+        margin: 1rem;
+
+        text-align: center;
+    }
+
+    
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+
+        margin-top: 3rem;
+
+    }
+
+    .mySlides {display: none}
+    .slideshow-container img {
+        vertical-align: middle;
+        height: 15rem;
+
+        
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.658);
+    }
+
+    /* Caption text */
+    .text {
+        color: #a57777;
+        background-color: #ffcbcb8e;
+        font-size: 1rem;
+        padding: 8px 4rem;
+
+        
+        text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        background-color: #0000008e;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+    }
+
+    .active{
+        background-color: rgb(117, 117, 117)
+    }
+
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    .icon{
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************** start of tablet styles **********************************/
+@media only screen and (min-device-width : 767px) and (max-device-width : 1024px){
+    body, html {
+        padding-top: 1.22rem;
+    }
+
+    .slideshow-container{
+        margin-top: 2rem;
+    }
+    .slideshow-container img {
+        vertical-align: middle;
+        height: 30rem;
+
+    }
+
+    .content-header{
+
+    }
+    .contentintro{
+        font-size: 1rem;
+    }
+
+    .othercontact-container{
+        display: inline-block;
+    }
+
+    .othercontact-container img{
+        display: inline-block;
+    }
+
+    .text {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        padding: 8px 12px;
+
+        background-color: #00000077;
+        color: white;
+      }
+
+    .icon{
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/********************************** start of desktop styles **********************************/
+@media only screen and (min-width: 1024px) {
+    .slideshow-container{
+        margin-bottom: 4rem;
+    }
+    .slideshow-container img{
+        height: 40rem;
+    }
+
+    .text {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        padding: 8px 12px;
+
+        background-color: #00000077;
+        color: white;
+    }
+
+    .icon{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .content-header{
+        width: 80%;
+        margin-left: 9.3rem;
+    }
+    .contentintro{
+        font-size: 1rem;
+    }
+    .slideshow-container img{
+        max-width: 1200px;
+        height: 40rem;
+    }
+}
+

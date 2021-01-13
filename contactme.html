@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="headerfooter.css">
+        <link rel="stylesheet" href="contact.css">
+        <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+
+    </head>
+    <body id="bodycontainer">
+        <!-- Navigation bar -->
+        <header class = "mainheader">
+            <nav class= "mainnav">
+                <ul class= "mainnav-items">
+                    <!-- start of hamburger menu -->
+                    <nav id="sidenav">
+                        <div id="sidenav-item">
+                            <input type="checkbox"/>
+                            
+                            <div class="hamburglar">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                                
+                            <ul id="sidenav-menu">
+                                <a href="index.html"><li>Home</li></a>
+                                <a href="gallery.html"><li>Gallery</li></a>
+                                <a href="portfolio.html"><li>Portfolio</li></a>
+                                <a href="resume.html"><li>Resume</li></a>
+                                <a href="classschedule.html"><li>Class</li></a>
+                                <a href="contactme.html"><li>Contact Me</li></a>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <!-- navigation menu items--> 
+                    <div class = "mainnav-list">
+                        <li class= "mainnav-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class = "mainnav-item">
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li class = "mainnav-item">
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class = "mainnav-item">
+                            <a href="resume.html">Resume</a>
+                        </li>
+                        <li class = "mainnav-item">
+                            <a href="classschedule.html">Class Schedule</a>
+                        </li>
+                        <li class = "mainnav-item">
+                            <a href="contactme.html">Contact Me</a>
+                        </li>
+                    </div> 
+                </ul>
+            </nav> 
+        </header> <!-- end of website header -->
+        <!-- start of website content -->
+
+        <div class="contact-container">
+            <h1>Contact Me</h1>
+
+            <form name = "myForm" action="https://formspree.io/anesepark@gmail.com" onsubmit="return validateForm()" method="post">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="First Name">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Last Name">
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="_replyto" placeholder = "example@example.com">
+            
+            
+                <label for="subject">Message:</label>
+                <textarea id="subject" name="subject" placeholder="Questions? Concerns?" style="height:200px"></textarea>
+                
+                <div class="button">
+                    <input type="submit" value="Submit">
+                </div>
+              </form>
+        </div>
+        <div class="othercontact-container">
+            <div class="icons"><a href="https://facebook.com"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7bcda425-e011-4eb3-ae73-311a3ddc3b5d/dbbji9v-d14e4bba-1b29-4dfb-97d1-c58bf66e7c3f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdiY2RhNDI1LWUwMTEtNGViMy1hZTczLTMxMWEzZGRjM2I1ZFwvZGJiamk5di1kMTRlNGJiYS0xYjI5LTRkZmItOTdkMS1jNThiZjY2ZTdjM2YucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.X9IZFXQRGgu4bQcE8RTdEXtCLNwzogA_1SgZwkjL74s" alt=""></a></div>
+            <div class="icons"><a href="https://instagram.com"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7bcda425-e011-4eb3-ae73-311a3ddc3b5d/ddceb2c-10223404-1e4e-481f-b0de-23dfdc9f4f49.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdiY2RhNDI1LWUwMTEtNGViMy1hZTczLTMxMWEzZGRjM2I1ZFwvZGRjZWIyYy0xMDIyMzQwNC0xZTRlLTQ4MWYtYjBkZS0yM2RmZGM5ZjRmNDkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.OHoLpYEk2eBUo-Vws3uMAn3_ahMhbbnWZ_LP4s-wjOI" alt=""></a></div>
+            <div class="icons"><a href="https://gmail.com"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7bcda425-e011-4eb3-ae73-311a3ddc3b5d/ddceb2i-441c608b-c8c2-48bc-9d65-0d13b5c908f8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdiY2RhNDI1LWUwMTEtNGViMy1hZTczLTMxMWEzZGRjM2I1ZFwvZGRjZWIyaS00NDFjNjA4Yi1jOGMyLTQ4YmMtOWQ2NS0wZDEzYjVjOTA4ZjgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.MrnTow6q_zx5P8aToAQUri_G5B8N7p33821ljz4qwm4" alt=""></a></div>
+            <div class="icons"><a href="https://twitter.com"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7bcda425-e011-4eb3-ae73-311a3ddc3b5d/dbbjiae-352faf94-6399-4b1c-b4b7-9424ca1923bf.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdiY2RhNDI1LWUwMTEtNGViMy1hZTczLTMxMWEzZGRjM2I1ZFwvZGJiamlhZS0zNTJmYWY5NC02Mzk5LTRiMWMtYjRiNy05NDI0Y2ExOTIzYmYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.QeemQVxC9tI5Ixmm-d-ejkq20x0DwpNP1j_j12idYu8" alt=""></a></div>
+        </div>
+        
+        <!-- start of website footer -->
+        <footer class="mainfooter">
+            <ul class= "mainfooter-items">
+                <div class="leftside">
+                    <p class= "mainfooter-item">Last updated: July 24th, 2019</p>
+                    <p class= "mainfooter-item">©2019</p>
+                </div>
+
+
+                <p id="footer-link">
+                    <a href="https://www.linkedin.com/in/chaeyoun-park-02a5b7188/">LinkedIn</a>
+                </p>
+            </ul>
+        </footer>
+    </body>
+
+    <script src="contact/contact.js"></script>
+</html>

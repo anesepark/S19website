@@ -1,0 +1,183 @@
+#bodycontainer{
+
+}
+
+/******************************** CONTENT ********************************/
+.resume-container{
+    color: rgb(131, 101, 101);
+    font-family: "Catamaran", sans-serif;
+
+}
+#resume-header{
+    text-align: center;
+    border: 5px solid white;
+    border-radius: 3px;
+
+}
+
+.resume {
+    background-color: rgba(255, 232, 232, 0.493);
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+.resume-sub{
+    color: rgb(155, 105, 105);
+    border-bottom: 3px solid rgb(214, 168, 168);
+}
+.resume-subcat{
+    color: rgb(134, 100, 100);
+}
+.resume li{
+    color: rgb(185, 138, 138);
+}
+.sidecontent{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************** start of tablet styles **********************************/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+    /******************** header ********************/
+    body, html {
+        padding-top: 1.22rem;
+    }
+
+    .content-container{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-gap: 2rem;
+    }
+    .sidecontent{
+        display: none;
+    }
+
+    
+}
+
+
+/********************************** start of desktop styles **********************************/
+@media only screen and (min-width: 1024px){
+    .resume{
+        width: 50%;
+        margin: 2rem;
+        margin-bottom: 4rem;
+        margin-left: 5rem;
+        border-radius: 3px;
+        padding: 10px;
+        
+    }
+    .sidecontent{
+        display: block;
+    }
+
+    #horizontal{
+        width: 25rem;
+        height: 12rem;
+        border-radius: 3px;
+        position: fixed;
+
+        right: -10px;
+        bottom: 34.8rem;
+
+        background-color: #ffd3d3;
+
+    }
+
+    #profileimage img{
+        position: fixed;
+        top: 8rem;
+        right: 7.3rem;
+        border-radius: 4px;
+        border: 5px solid #fff5f5;
+
+        height: 10rem;
+        width: 10rem;
+    }
+
+    #smalldesc p{
+        height: 13rem;
+        width: 20rem;
+        padding: 1rem;
+
+        background-color: #ffffff73;
+        border-radius: 3px;
+        border: 3px solid #ffdcdc;
+        position: fixed;
+
+        top: 20rem;
+        right: 0rem;
+    }
+    #smalldesc p{
+        margin: 1rem;
+    }
+    
+}
+@media only screen and (min-width: 1440px) {
+
+    body{
+        padding-bottom: 10rem;
+    }
+    /******************** content ********************/
+    .resume{
+        width: 50%;
+        margin: 2rem;
+        margin-bottom: 4rem;
+        margin-left: 8rem;
+        border-radius: 3px;
+        padding: 10px;
+        
+    }
+
+    #horizontal{
+        width: 30rem;
+        height: 12rem;
+        border-radius: 3px;
+        position: fixed;
+
+        right: -10px;
+        bottom: 32rem;
+
+        background-color: #ffd3d373;
+
+    }
+
+    #profileimage img{
+        position: fixed;
+        top: 8rem;
+        right: 9.3rem;
+        border-radius: 4px;
+        border: 5px solid #ffffff;
+
+        height: 10rem;
+        width: 10rem;
+    }
+
+    #smalldesc p{
+        height: 13rem;
+        width: 20rem;
+
+        background-color: #ffffff73;
+        border-radius: 3px;
+        border: 3px solid #ffdcdc;
+        position: fixed;
+
+        top: 22rem;
+        right: 2rem;
+
+    }
+
+
+
+}

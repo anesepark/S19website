@@ -1,0 +1,367 @@
+body, html {
+    padding-top: 1.20rem;
+    padding-bottom: 1.70rem;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mainheader{
+    top: 0;
+    width: 100%;
+    height: 2.5rem;
+    position: fixed;
+    background-color: #E0EDFF;
+    text-decoration: none;
+    font-size: 0.9rem;
+
+}
+
+.mainnav-items{
+    text-align: right;
+}
+
+.mainnav-item{
+    display: inline-block;
+    list-style: none;
+}
+
+.mainnav-item a{
+    display: none;
+}
+
+/**** hamburger icon ****/
+#sidenav-item span
+{
+  display: block;
+  width: 33px;
+  height: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background-color: #FFF;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+}
+
+#sidenav-item input:checked ~ ul
+{
+  transform: none;
+  
+}
+
+.hamburglar{ /** position of the hamburger **/
+    position: relative;
+    top: -57px;
+    left: -77px;
+}
+
+a{
+  text-decoration: none;
+  color: #A2B1C4;
+  font-family: "Catamaran", sans-serif;
+  padding-right: 20px;
+  font-size: 1rem;
+  
+  transition: color 0.3s ease;
+}
+
+
+#sidenav-item{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#sidenav-item input{ /** position of the button **/
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -63px;
+  left: -85px;
+  
+  cursor: pointer;
+  
+  opacity: 0;
+  z-index: 100;
+  
+  -webkit-touch-callout: none;
+}
+
+#sidenav-menu{
+  position: absolute;
+  width: 150px;
+  margin: -100px 0 0 -90px;
+  padding-top: 30px;
+
+  
+  background: #E0EDFF;
+  list-style-type: none;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  /** slows down the movement at the end for a smoother transition **/
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#sidenav-menu li{
+  font-size: 0.9rem;
+  font-family: "Catamaran", sans-serif;
+  padding-right: 20px;
+
+}
+
+
+/******************************** CONTENT ********************************/
+.content-container{
+    display: absolute;
+    height: 100%;
+    
+}
+.content-image {
+  /*adds a layer of color over the image */
+  background-image: linear-gradient(rgba(200, 194, 223, 0.5), rgba(174, 184, 218, 0.5)), url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c87d20d4-1cbe-42ae-b191-cc629a5b5a73/dboq3yo-39e2d1f9-502e-489f-94ba-3f12cee5ffa1.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M4N2QyMGQ0LTFjYmUtNDJhZS1iMTkxLWNjNjI5YTViNWE3M1wvZGJvcTN5by0zOWUyZDFmOS01MDJlLTQ4OWYtOTRiYS0zZjEyY2VlNWZmYTEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.1CSMTsa2L6Vqw4-WKZAWyCtv5GScUlXPeDJuDAjHsGg");
+  height: 100%;
+  display: absolute !important;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: auto;
+  border-radius: 3px;
+  z-index: -10;
+}
+
+.content-text {
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+  font-family: "Palanquin", sans-serif;
+}
+
+#startup-text{
+    border: 4px solid white;
+    border-radius: 2px;
+    padding: 10px;
+    
+}
+/******************************** FOOTER ********************************/
+.mainfooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    height: 2rem;
+    background-color: #E0EDFF;
+}
+
+
+
+.mainfooter-item{
+    text-decoration: none;
+    display: inline-block;
+
+    font-family: "Palanquin", sans-serif;
+    color: #A2B1C4;
+    font-size: 0.7rem;
+
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+#footer-link{
+    display: inline-block;
+    text-align: center;
+}
+
+#footer-link a{
+    text-decoration: none;
+    font-family: "Palanquin", sans-serif;
+    color: #A2B1C4;
+    font-weight: bold;
+    font-size: 0.7rem;
+
+    position: relative;
+    bottom: 25px;
+    left: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/********************************** start of tablet styles **********************************/
+@media only screen and (min-device-width : 767px) and (max-device-width : 1024px){
+    body, html {
+        padding-top: 1.22rem;
+        overflow: hidden;
+    }
+
+
+    /****************** FOOTER *******************/
+    .mainfooter{
+        height: 2rem;
+    }
+
+
+    .mainfooter-item,
+    #footer-link a{
+        position: relative;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    #footer-link a{
+        left: 480px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/********************************** start of desktop styles **********************************/
+@media only screen and (min-width: 1024px) {
+    /******************** main navigation ********************/
+    
+    body, html {
+        padding-top: 1.55rem;
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .mainnav-items{
+        background-color: #E0EDFF;
+    }
+    
+    .mainnav-item{
+        list-style: none;
+        display: inline-block;
+    }
+
+    .mainnav-item a{
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px;
+        margin: 4px;
+        
+        font-family: "Palanquin", sans-serif;
+        font-size: 1em;
+        color: #A2B1C4;
+        font-weight: bold;
+        border-radius: 2px;
+
+        position: relative;
+        bottom: 4px;
+
+
+
+    }
+
+    .hamburglar,
+    #sidenav{
+        display: none;
+    }
+
+    .mainheader{
+        height: 20px;
+    }
+
+    a:hover{
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out; 
+
+        color: rgb(126, 141, 172);
+        background-color: rgb(248, 251, 255);
+    }
+    /******************** content ********************/
+    .content-text {
+        top: 45%;
+        left: 50%;
+      }
+    
+    /******************** footer ********************/
+
+    .mainfooter {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;  
+
+        background-color: #E0EDFF;
+        margin: 0;
+        padding: 0;
+    }
+    .mainfooter ul{
+        margin: 0px;
+    }
+    .mainfooter-item{
+        text-decoration: none;
+        display: inline-block;
+    
+        padding: 5px;
+        font-family: "Palanquin", sans-serif;
+        color: #A2B1C4;
+        font-weight: bold;
+        bottom: 20px;
+
+        position: relative;
+        top: 2px;
+    }
+    
+    #footer-link{
+        float: right;
+
+        padding-right: 20px;
+        display: inline-block;
+        bottom: 11rem;
+    }
+    
+    #footer-link a{
+        text-decoration: none;
+        font-family: "Palanquin", sans-serif;
+        font-size: 0.5rem;
+        bottom: 0.5rem;
+        color: rgb(146, 161, 180);
+        font-weight: bold;
+
+
+        position: relative;
+        
+    }
+    
+}
